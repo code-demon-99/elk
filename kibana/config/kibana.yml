@@ -6,7 +6,11 @@ server.name: kibana
 server.host: 0.0.0.0
 elasticsearch.hosts: [ "https://elasticsearch:9200" ]
 monitoring.ui.container.elasticsearch.enabled: true
-
+xpack.fleet.enabled: true
+xpack.fleet.agents.enabled: true
+xpack.security.enabled: true
+xpack.encryptedSavedObjects.encryptionKey: "s2862o5165m5468e576D5A71347437thing" 
+xpack.fleet.agents.tlsCheckDisabled: true
 ## X-Pack security credentials
 #
 elasticsearch.username: elastic

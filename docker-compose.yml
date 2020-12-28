@@ -48,6 +48,9 @@ services:
       - type: bind
         source: ./logstash/pipeline
         target: /usr/share/logstash/pipeline
+      - type: bind
+        source: ./logstash/logstash-input-mongodb/
+        target: /etc/logstash/conf.d/
         read_only: true
       # (!) CA certificate. Generate using instructions from tls/README.md
       - type: bind
